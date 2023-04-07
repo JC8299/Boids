@@ -8,6 +8,8 @@ The boid algorithm works by defining a set of rules that govern the behavior of 
 
 A lot of my implementation was an inefficient use of time since I made javascript files for an implementation of quadtrees and vectors.
 
+[Link to my implementation of boids](https://jc8299.github.io/Boids/)
+
 ## Resources
 - For animation loop setup:
   - https://codepen.io/gamealchemist/pen/VeawyL?editors=0010
@@ -16,7 +18,11 @@ A lot of my implementation was an inefficient use of time since I made javascrip
   - https://github.com/hiiambhanu/cg-boids
   - https://hiiambhanu.github.io/cg-boids/
 - For boids algorithm:
-  - https://www.youtube.com/watch?v=mhjuuHl6qHM
+
+  - <a href="http://www.youtube.com/watch?feature=player_embedded&v=mhjuuHl6qHM
+" target="_blank"><img src="http://img.youtube.com/vi/mhjuuHl6qHM/0.jpg" 
+alt="Coding Challenge #124: Flocking Simulation by The Coding Train" width="240" height="180" border="10" /></a><br>
+    https://www.youtube.com/watch?v=mhjuuHl6qHM
 
 ### TODO in future:
 - change between basic and quadtree
