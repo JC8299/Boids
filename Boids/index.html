@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script src="Scripts/vector2d.js" defer="true"></script>
+    <script src="Scripts/quadtree.js" defer="true"></script>
+    <script src="Scripts/QuadtreeBoids/quadtreeBoid.js" defer="true"></script>
+    <script src="Scripts/QuadtreeBoids/quadtreeBoidsAlgorithm.js" defer="true"></script>
+
+</head>
+<body>
+    <input type="checkbox" id="pause" checked="false">
+    <label class="pauseIcon" for="pause">
+        <span class="verticalLine" style="left:9px"></span>
+        <span class="verticalLine" style="left:19px"></span>
+        <span class="iconBackground"></span>
+    </label>
+    <div class="options">
+        <input type="checkbox" id="toggle">
+        <label class="plusIcon" for="toggle">
+            <span class="verticalLine"></span>
+            <span class="horizontalLine"></span>
+            <span class="iconBackground"></span>
+        </label>
+        <div class="menu">
+            <li>
+                <div class="sliderContainer">
+                    <div class="sliderBar">
+                        <input type="range" min="0.0" max="3.0" value="0.3" step="0.1" class="slider" id="alignmentSlider">
+                    </div>
+                    <div class="sliderBar">
+                        <input type="range" min="0.0" max="3.0" value="1.5" step="0.1" class="slider" id="separationSlider">
+                    </div>
+                    <div class="sliderBar">
+                        <input type="range" min="0.0" max="3.0" value="0.6" step="0.1" class="slider" id="cohesionSlider">
+                    </div>
+                    <div class="sliderBar">
+                        <input type="range" min="1" max="999" value="200" step="1" class="slider" id="boidCountSlider">
+                    </div>
+                </div>
+                <div class="sliderValueContainer">
+                    <span class="value" id="alignmentValue">???</span>
+                    <span class="value" id="separationValue">???</span>
+                    <span class="value" id="cohesionValue">???</span>
+                    <span class="value" id="boidCountValue">???</span>
+                </div>
+                <div class="sliderLabelContainer">
+                    <span class="optionsText"><b>Alignment</b></span>
+                    <span class="optionsText"><b>Separation</b></span>
+                    <span class="optionsText"><b>Cohesion</b></span>
+                    <span class="optionsText"><b>Boid Count</b></span>
+                </div>
+            </li>
+            <li>
+                <div class="boidToggleContainer">
+                    <div class="boidToggle">
+                        <input type="checkbox" id="blur" checked="true">
+                        <label class="radioButtonIcon" for="blur">
+                            <span class="radioButtonToggle"></span>
+                        </label>
+                        <span class="optionsText"><b>Blur</b></span>
+                    </div>
+                    <div class="boidToggle">
+                        <input type="checkbox" id="drawQuadtree" checked="false">
+                        <label class="radioButtonIcon" for="drawQuadtree">
+                            <span class="radioButtonToggle"></span>
+                        </label>
+                        <span class="optionsText"><b>Draw Quadtree</b></span>
+                    </div>
+                    <div class="boidToggle">
+                        <input type="checkbox" id="endlessBounds" checked="false">
+                        <label class="radioButtonIcon" for="endlessBounds">
+                            <span class="radioButtonToggle"></span>
+                        </label>
+                        <span class="optionsText"><b>Endless Bounds</b></span>
+                    </div>
+                </div>
+                <div class="boidToggleContainer">
+                    <div class="boidToggle">
+                        <input type="checkbox" id="orbitMouse" checked="true">
+                        <label class="radioButtonIcon" for="orbitMouse">
+                            <span class="radioButtonToggle"></span>
+                        </label>
+                        <span class="optionsText"><b>Orbit Mouse</b></span>
+                    </div>
+                </div>
+            </li>
+            <li style="flex-grow: 0;">
+                <span>Made By Justin Cheng</span>
+            </li>
+        </div>
+    </div>
+</body>
+</html>
